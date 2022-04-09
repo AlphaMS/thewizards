@@ -390,11 +390,11 @@ img {
   background-color: var(--blueColor-2);
 }
 
-.control .colors span:nth-child(4) {
+.control .colors span:nth-child(3) {
   background-color: var(--orange);
 }
 
-.control .colors span:nth-child(3) {
+.control .colors span:nth-child(4) {
   background-color: var(--greenColor);
 }
 
@@ -705,12 +705,6 @@ body.dark .services .row .col:hover .icon {
   display: block;
 }
 
-/*.portfolio .projects .portfolio-container .pro-div{
-  border:2px solid var(--black);
-}
-.portfolio .projects .portfolio-container:hover{
-  border:2px solid var(--customColor);
-}*/
 .portfolio-container {
   height: 20rem;
   overflow: hidden;
@@ -804,6 +798,14 @@ body.dark .services .row .col:hover .icon {
 
   .portfolio .projects {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-container .pro-div {
+    margin-top: -3rem;
+  }
+
+  .portfolio-container:hover .pro-div {
+    animation: none;
   }
 }
 
