@@ -71,7 +71,7 @@ img {
 }
 
 .container {
-  max-width: 101rem;
+  max-width: 90vw;
   margin: 0 auto;
 }
 
@@ -513,7 +513,7 @@ img {
 
 /* About */
 .section {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0rem;
   overflow: hidden;
 }
 
@@ -1109,6 +1109,10 @@ footer {
   text-align: center;
   border-top: 1px solid black;
   transition: var(--transition-2);
+}
+
+footer p {
+  margin-bottom: 1rem;
 }
 
 footer a {
