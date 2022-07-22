@@ -70,7 +70,7 @@ img {
   width: 100%;
 }
 
-.container {
+.container1 {
   max-width: 90vw;
   margin: 0 auto;
 }
@@ -226,7 +226,7 @@ img {
   height: 85vw;
   border-radius: 50%;
   right: -20%;
-  bottom: -60%;
+  bottom: -50%;
   background-color: var(--customColor);
   transition: var(--transition-2);
   z-index: -1;
@@ -1111,8 +1111,8 @@ footer {
   transition: var(--transition-2);
 }
 
-footer p {
-  margin-bottom: 1rem;
+footer div {
+  margin-top: 1rem;
 }
 
 footer a {
@@ -1129,4 +1129,10 @@ footer a {
   height: 30px;
   width: 30px;
   vertical-align: middle;
+}
+
+
+
+.training .navigation{
+  background-color: #42caff;
 }

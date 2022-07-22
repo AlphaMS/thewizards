@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.member header {
+    min-height: 7vh;
+}
+
+.member .container1 {
+    min-height: 81vh;
+}
+
+
+.member .name1 {
+    color: var(--customColor);
+    padding-left: 140px;
+    padding-top: 10px;
+    font-size: 32px;
+    font-weight: 600;
+
+}
+
+.member hr {
+    border: 2px solid black;
+    margin: 0px 35px 0px 90px;
+    width: 95vw;
+}
+
+
+.member .box1 {
+    display: grid;
+    grid-template-columns: 20fr 1fr 8fr;
+    grid-template-rows: 1fr 130px;
+   
+    margin: 10px;
+    margin-left: 130px;
+    
+
+}
+.member .information{
+    width: 100%;
+}
+
+.member .box1 .information p {
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.box1 .information img {
+    float: left;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+   
+    margin-right: 15px;
+}
+
+
+.vrline {
+    border: 2px solid black;
+    width: 0px;
+    margin-left: 25px;
+}
+
+body.dark .vrline {
+    border: 2px solid white;
+}
+
+body.dark hr {
+    border: 2px solid white;
+}
+
+
+
+
+.member .OtherPeople {
+    background-color: var(--customColor);
+    width: 100%;
+    border-radius: 25px;
+    margin-right: 25px;
+}
+
+.OtherPeople .content {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 20px;
+}
+
+.OtherPeople ul li {
+    list-style: circle;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.OtherPeople ul li p {
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+
+.contactinfo {
+    background-color: var(--customColor);
+    width: 100%;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+}
+
+.contactinfo .vrline {
+    border-radius: 10px;
+    margin: 7px 0;
+}
+
+.contactinfo .set {
+    margin: 15px;
+    padding-left: 10px;
+}
+
+.sethead {
+    font-size: 18px;
+    margin-left: -10px;
+}
+
+.handle {
+    margin: 16px;
+    font-size: 18px;
+}
+
+
+.member .socials {
+    position: relative
+}
+
+.socials .icons {
+    margin-left: 10px;
+}
+
+
+
+.topp {
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.member .socials a {
+
+    margin: 0 5px;
+}
+
+.twitter {
+    margin-right: -40px;
+    color: blue;
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) { 
+    .container1{
+        margin-left: -60px;
+    }
+    .member .vrline{
+        margin-right: 10px;
+    }
+    .member .contactinfo .socials{
+        margin-left: -40px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) { 
+
+    .container1{
+        margin-left: -60px;
+    }
+
+    .member .box1{
+        grid-template-columns: 1fr 50px 0.6fr;
+    }
+    .member .box1 p img{
+        width: 150px;
+        height: 150px;
+    }
+    .member .contactinfo .socials{
+        margin-left: -50px;
+    }
+
+    .socials span {
+        font-size: 3rem;
+        
+    }
+
+}
+
+
+
+/*Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) { 
+    .container1{
+        margin-left: -70px;
+    }
+    .member .box1{
+        grid-template-columns: 2.5fr 0.3fr 2fr;
+        /* grid-column-gap: 25px; */
+    }
+    .member .information{
+        width: 100%;
+        
+    }
+
+    .member .information p img{
+        width:50%;
+        height:50%;
+    }
+    .vrline {
+        margin-right: 15px;
+        width: 0;
+    }
+
+    .member .OtherPeople{
+        width: 100%;
+        height: 80%;
+    }
+.OtherPeople .content{
+    font-size: 20px;
+}
+
+    .member .OtherPeople ul li{
+        margin-left: 30px;
+    }
+
+    .twitter{
+        padding: 5px;
+    }
+
+}
+
+
+
+ @media (max-width: 576px) { 
+    
+    .container1{
+        margin-left:0;
+    }
+    .member .name1{
+        padding-left: 30px;
+        font-size: 25px;
+    }
+   .member hr{
+        margin-right: 0px;
+        margin-left: 10px;
+        width: 90vw;
+    }
+    .member .box1{
+        grid-template-columns: 1fr ;
+        width:90%;
+        margin-left: 0;
+    }
+    .member .information p{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .member .information p img{
+        width:35%;
+        height:35%;
+    }
+
+    .edited{
+        width: 90vw;
+        height: 0px;
+        /* margin-top: 52px; */
+        margin: auto 5px;
+
+    }
+
+    .member .OtherPeople{
+        width: 70vw;
+        margin-left: 20px;
+        height: 100%;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        justify-self: center;
+    }
+
+    .member .contactinfo{
+        width: 70vw;
+        margin-left: 20px;
+        justify-self: center;
+    }
+    .member .contactinfo .socials{
+        margin-left: 0;
+    }
+
+   
+
+    /* if we make it horizontal */
+    .contactinfo{
+        grid-template-columns: 1fr;
+        align-self: center;
+    }
+
+    .sethead{
+        margin-left: 6px;
+        font-size: 18px;
+    }
+    .contactinfo  .specialedit{
+        width: 80%;
+        margin:auto;
+    }
+ }
+
+ 
