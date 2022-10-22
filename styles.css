@@ -321,9 +321,9 @@ img {
   transition: var(--transition-1);
 }
 
-
 /* Color Control */
 .control {
+  display: none;
   position: fixed;
   right: -4rem;
   top: 15%;
@@ -331,76 +331,8 @@ img {
   z-index: 1000;
 }
 
-.control.open {
-  right: 0;
-}
 
-.control .widget {
-  position: absolute;
-  left: -3.7rem;
-  border-radius: 1rem 0 0 1rem;
-  padding: 0.55rem 0.6rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  background-color: #fff;
-  border: 1px solid black;
-}
 
-.control .widget i {
-  font-size: 2.3rem;
-  animation: spin 2s linear infinite;
-  color: #121713;
-}
-
-@keyframes spin {
-  0% {
-    tranform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.control .colors {
-  background-color: #fff;
-  padding: 1rem 0.7rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.control .colors span {
-  display: block;
-  width: 1.9rem;
-  height: 1.9rem;
-  padding: 0.7rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.control .colors span:not(:last-child) {
-  margin-bottom: 0.7rem;
-}
-
-.control .colors span:nth-child(1) {
-  background-color: var(--blueColor-3);
-}
-
-.control .colors span:nth-child(2) {
-  background-color: var(--blueColor-2);
-}
-
-.control .colors span:nth-child(3) {
-  background-color: var(--orange);
-}
-
-.control .colors span:nth-child(4) {
-  background-color: var(--greenColor);
-}
-
-.control .colors span:nth-child(5) {
-  background-color: var(--purple);
-}
 
 /* wizard */
 .header .content {
@@ -585,8 +517,9 @@ img {
 
 /* Services */
 .section .row {
+  padding: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
 }
 
@@ -697,7 +630,7 @@ body.dark .services .row .col:hover .icon {
 .portfolio .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2.5rem;
   margin-top: 3rem;
 }
 
@@ -706,7 +639,7 @@ body.dark .services .row .col:hover .icon {
 }
 
 .portfolio-container {
-  height: 20rem;
+  height: 26rem;
   overflow: hidden;
   border: 0.2rem solid #000;
 }
@@ -926,7 +859,7 @@ body.dark .testimonials .right p {
 /* Blog */
 .blog .col img {
   border-radius: 1rem;
-  height: 200px;
+  height: 250px;
 }
 
 .blog .blog-box {
